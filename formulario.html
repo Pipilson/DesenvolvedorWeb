@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Curso Completo do Desenvolvedor Web</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	</head>
+	<body>
+		<form method="POST" action="form.php"> <!-- tudo dentro de FORM será enviado no formulário -->
+			<div class="form-group">
+				<label for="nome">Nome</label>
+				<input type="text" name="Nome" id="nome" class="form-control" placeholder="Digite o seu nome" required>
+			</div>
+
+			<div class="form-group">
+				<label for="email">E-mail</label>
+				<input type="email" name="E-mail" id="email" class="form-control" placeholder="seu@email.com.br" required>
+			</div>
+
+			<div class="form-group">
+				<label for="nascimento">Nascimento</label>
+				<input type="date" name="E-mail" id="nascimento" class="form-control" required min="2016-01-01" max="2022-11-20">
+			</div>
+
+			<div class="form-group">
+				<label>Sexo: </label>
+				<input type="radio" id="masculino" name="Sexo">
+				<label for="masculino">Masculino</label>
+				<input type="radio" name="Sexo" id="feminino">
+				<label for="feminino">Feminino</label>
+			</div>
+
+			<div class="form-group">
+				<label for="li">Li e aceitos os termos</label>
+				<input type="checkbox" id="li" name="Li" required checked>
+			</div>
+
+			<div class="form-group">
+				<label for="volume">Volume</label>
+				<input type="range" id="volume" name="Volume" min="0" max="100" value="25">
+			</div>
+
+			<div class="form-group">
+				<label for="meter">Bateria</label>
+				<meter min="0" max="100" value="20" low="21" name="meter">20</meter>
+			</div>
+
+			<div class="form-group">
+				<label for="progress">Carregando</label>
+				<progress min="0" max="100" value="60" name="Carregando">60%</progress>
+			</div>
+
+			<div>
+				<button type="submit" class="btn btn-primary">Cadastrar</button>
+			</div>
+
+			<div class="form-group">
+				<label for="ano">Ano Fabricação</label>
+				<input type="number" name="E-mail" id="ano" class="form-control" min="1920" max="2022" value="2022" step="10">
+			</div>
+
+			<div class="form-group">
+				<label for="cor">Cor</label>
+				<input type="color" name="cor" id="cor" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="url">Url</label>
+				<input type="url" name="url" id="url" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="search">Search</label>
+				<input type="search" name="search" id="search" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="mensagem">Mensagem</label>
+				<textarea type="search" name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+			</div>
+
+			<div class="form-group">
+				<label for="estado">Estado</label>
+				<select name="estado" id="estado">
+					<option value="SP">São Paulo</option>
+					<option value="MG" selected>Minas Gerais</option>
+					<option value="RJ">Rio de Janeiro</option>
+				</select>
+			</div>
+			
+		</form>
+
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
