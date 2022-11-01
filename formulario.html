@@ -9,12 +9,12 @@
 		<form method="POST" action="form.php"> <!-- tudo dentro de FORM será enviado no formulário -->
 			<div class="form-group">
 				<label for="nome">Nome</label>
-				<input type="text" name="Nome" id="nome" class="form-control" placeholder="Digite o seu nome" required>
+				<input type="text" name="Nome" id="nome" class="form-control" placeholder="Digite o seu nome" required autofocus tabindex="1" disabled>
 			</div>
 
 			<div class="form-group">
 				<label for="email">E-mail</label>
-				<input type="email" name="E-mail" id="email" class="form-control" placeholder="seu@email.com.br" required>
+				<input type="email" name="E-mail" id="email" class="form-control" placeholder="seu@email.com.br" required tabindex="2" readonly>
 			</div>
 
 			<div class="form-group">
@@ -56,7 +56,7 @@
 
 			<div class="form-group">
 				<label for="ano">Ano Fabricação</label>
-				<input type="number" name="E-mail" id="ano" class="form-control" min="1920" max="2022" value="2022" step="10">
+				<input type="number" name="E-mail" id="ano" class="form-control" min="1920" max="2022" value="2022" step="10" tabindex="3">
 			</div>
 
 			<div class="form-group">
@@ -86,6 +86,54 @@
 					<option value="MG" selected>Minas Gerais</option>
 					<option value="RJ">Rio de Janeiro</option>
 				</select>
+			</div>
+
+			<div class="form-group">
+				<label for="estado">Estado</label>
+				<select name="estado" id="estado">
+					<optgroup label="Sudeste">
+						<option value="SP">São Paulo</option>
+						<option value="MG" selected>Minas Gerais</option>
+						<option value="RJ">Rio de Janeiro</option>
+					</optgroup>
+					<optgroup label="Sul">
+						<option value="PR">Paraná</option>
+						<option value="SC">Santa Catarina</option>
+						<option value="RS">Rio Grande do Sul</option>
+					</optgroup>
+				</select>
+			</div>
+
+			<input type="hidden" name="id" value="1">
+
+			<div class="form-group">
+				<label for="password">Senha</label>
+				<input type="password" name="password" id="password" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="mes">Mês</label>
+				<input type="month" name="mes" id="mes" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="week">Semana</label>
+				<input type="week" name="week" id="week" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="time">Hora</label>
+				<input type="time" name="time" id="time" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<input type="text" list="nav">
+				<datalist id="nav">
+					<option value="Chrome">
+					<option value="Firefox">
+					<option value="Safari">
+					<option value="Edge">
+				</datalist>
 			</div>
 			
 		</form>
