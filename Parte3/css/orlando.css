@@ -16,7 +16,32 @@ header .header-black{
 	height: 40px;
 }
 
+header .header-black li{
+	background-image: url("../img/clubs.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin: 4px 8px;
+}
+
+header .header-black li.club-01{
+	background-position: 0 0;
+}
+
+header .header-black li.club-02{
+	background-position: -48px 0;
+}
+
+header .header-black li.club-03{
+	background-position: -96px 0;
+}
+
+header .header-black li a{
+	width: 31px;
+	height: 31px;
+	display: block;
+}
+
 header #logotipo{
 	position: absolute;
-	top: -20px;
+	top: -65px;
 }
